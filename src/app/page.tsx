@@ -93,7 +93,7 @@ export default function Dashboard() {
                 <span className="">Amount</span>
               </div>
 
-              <div>
+              <div className="overflow-y-scroll h-40">
                 {recentTasks.map(({ date, task, reward, amount }, idx) => (
                   <div key={idx} className="grid grid-cols-4 text-center text-xs p-2 text-nowrap font-semibold border-t border-[#ccd]">
                     <span className="">{date}</span>
